@@ -9,7 +9,9 @@ exports.mostCommon = function(input) {
 
     return sorted
         .slice(0,5)
-        .map(getLetter)
+        .map(function(l){
+            return Object.keys(l);
+        })
         .join('');
 };
 
