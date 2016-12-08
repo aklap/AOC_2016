@@ -18,8 +18,8 @@ module.exports = {
         var checksum = getChecksum(r),
             sum = mostCommon(r);
 
-        function getChecksum(rm) {
-            var expected = rm.match(/\[.*/)[0], 
+        function getChecksum(r) {
+            var expected = r.match(/\[.*/)[0], 
                 checksum = expected.slice(1, expected.length-1);
 
             return checksum;
