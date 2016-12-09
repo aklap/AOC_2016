@@ -33,5 +33,6 @@
             return ['solution pt I: ' + mostFrequent, '\nsolution pt II: ' + leastFrequent];
         }).then(function(freqs) {
             console.log(freqs.join(' '));
+            return freqs.join('');
         });
 })();
