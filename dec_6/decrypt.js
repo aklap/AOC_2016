@@ -30,9 +30,9 @@
             // solution to part II
             var leastFrequent = letters.map(freq.leastFrequent).join('');
 
-            return ['solution pt I: ' + mostFrequent, '\nsolution pt II: ' + leastFrequent];
+            return 'solution pt I: ' + mostFrequent, '\nsolution pt II: ' + leastFrequent;
         }).then(function(freqs) {
-            console.log(freqs.join(' '));
-            return freqs.join('');
+            console.log(freqs);
+            return freqs;
         });
 })();
