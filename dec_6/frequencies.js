@@ -1,7 +1,7 @@
 var helpers = require('../dec_4/mostCommon/mostCommonHelpers');
 
 module.exports = {
-    getModes: function (cols) {
+    getModes: function(cols) {
     var allModes = [];
 
     for(var i=0; i<cols.length; i++) {
@@ -17,11 +17,11 @@ module.exports = {
         return allModes;
     },
 
-    mostFrequent: function (c) {
+    mostFrequent: function(c) {
         return c[0];
     },
 
-    leastFrequent: function (c) {
+    leastFrequent: function(c) {
         return c[c.length-1];
     }
 };
